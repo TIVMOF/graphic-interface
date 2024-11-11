@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COCOSOLIS България - Натурални био масла за супер тен и сияйна кожа</title>
-    <script href="script.js"></script>
+    <script href="scripts.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -16,7 +18,7 @@
                 <section id="header-crawler" style="display: block;">
                     <div id="header-crawler-track" style="padding-left: 0px; padding-right: 0px;">
                         <ul id="header-crawler-list" role="presentation" style="transform: translateX();">
-                            <li class="header-crawler-clone01" style="margin-right: 2rem; width: calc(100% + 0rem);">
+                            <li class="header-crawler-clone01" style="margin-right: 2rem; width: calc(50% + 0rem);">
                                 Пакетите за Black Friday са тук 🤍 Пазарувай с до 30% отстъпка
                             </li>
                             <li class="header-crawler-clone01" style="margin-right: 2rem; width: calc(100% + 0rem);">
@@ -66,7 +68,11 @@
                                     <a href="https://cocosolis.com/bg/contacts/">Контакти</a>
                                 </li>
                                 <li id="desktop-menu-item06" class="menu-item">
-                                    <a></a>
+                                    <div id="hamburger-icon" class="menu-item">
+                                        <span class="hamburger-line"></span>
+                                        <span class="hamburger-line"></span>
+                                        <span class="hamburger-line"></span>
+                                    </div>
                                     <ul id="sub-menu">
                                         <li id="sub-menu-item01" class="menu-item">
                                             <a href="https://cocosolis.com/bg/terms-of-use/">Условия за ползване на сайта</a>
@@ -165,6 +171,21 @@
     </header>
 
     <main id="products">
+        <div id="black-friday-2024-container">
+            <section id="black-friday-2024">
+                <div id="black-friday-2024-contents" class="inner-wrapper">
+                    <img id="black-friday-2024-bundle-gif" src="image/banner-black-friday-2024-bundle.gif" alt="">
+                    <h3 id="black-friday-2024-bundle-title">BLACK FRIDAY</h3>
+                    <a id="black-friday-2024-bundle-button" href="#bundles">ПАЗАРУВАЙ</a>
+                </div>
+            </section>
+            <section id="black-friday-2024-terms">
+                <p>
+                    * Промоцията е валидна до изчерпване на количествата.
+                    <a href="https://cocosolis.com/bg/terms-of-use/early-black-friday-2024/"> Запознай се с пълните условия.</a>
+                </p>
+            </section>
+        </div>
         <div id="products-wrapper">
             <section id="all-products">
                 <section id="bundles">
@@ -174,7 +195,7 @@
                                 ПРОМО ПАКЕТИ
                             </h2>
                         </div>
-                        <div id="bundles-container">
+                        <div id="bundles-container" class="product-container">
                             <div class="single-product">
                                 <div id="bronze-tan" style="opacity: 1;">
                                     <a class="single-product-listing-link" href="https://cocosolis.com/bg/product/bronze-tan/">
@@ -363,16 +384,13 @@
                             </h2>
                             <p>Натурални продукти за силна, гъста и бляскава коса</p>
                         </div>
-                        <div id="hair-container">
+                        <div id="hair-container" class="product-container">
                             <div class="single-product">
                                 <div id="grow" class="single-product-listing-header" style="opacity: 1;">
                                     <a class="single-product-listing-link" href="https://cocosolis.com/bg/product/grow-hair-growth-serum-spray/">
                                         <div class="single-product-listing-image" style="background: url(image/slider-grow.jpg); background-size: cover;">
                                             <span class="icon-holder">
                                                 <span class="2024-icon">-12%</span>
-                                            </span>
-                                            <span class="product-awards-beauty">
-                                                <img src="image/awards-beauty-shortlist-editors-choice.png"">
                                             </span>
                                             <span>
                                                 IMPROVED
@@ -415,9 +433,6 @@
                                         <div class="single-product-listing-image" style="background: url(image/slider-grow.jpg); background-size: cover;">
                                             <span class="icon-holder">
                                                 <span class="2024-icon">-11%</span>
-                                            </span>
-                                            <span class="product-awards-beauty">
-                                                <img src="image/awards-beauty-shortlist-editors-choice.png"">
                                             </span>
                                         </div>
                                     </a>
@@ -517,16 +532,13 @@
                                 Серията SKIN за перфектна кожа, без несъвършенства.
                             </p>
                         </div>
-                        <div id="skin-container">
+                        <div id="skin-container" class="product-container">
                             <div class="single-product">
                                 <div id="skin-anti-cellulite" class="single-product-listing-header" style="opacity: 1;">
                                     <a class="single-product-listing-link" href="https://cocosolis.com/bg/product/skin-anti-cellulite-dry-oil/">
                                         <div class="single-product-listing-image" style="background: url(image/skin-anticellulite.jpg); background-size: cover;">
                                             <span class="icon-holder">
                                                 <span class="2024-icon">-16%</span>
-                                            </span>
-                                            <span class="product-awards-beauty">
-                                                <img src="image/awards-beauty-shortlist-editors-choice.png"">
                                             </span>
                                         </div>
                                     </a>
@@ -681,7 +693,7 @@
                             </p>
                         </div>
 
-                        <div class="face-container">
+                        <div class="face-container" class="product-container">
                             <div class="single-product">
                                 <div id="aqua" class="single-product-listing-header" style="opacity: 1;">
                                     <a class="single-product-listing-link" href="https://cocosolis.com/bg/product/aqua-filler-effect-hyaluron-supreme/">
@@ -840,7 +852,7 @@
                             <h2>АВТОБРОНЗАНТИ</h2>
                             <p>За перфектен тен, без да е необходимо слънце. Постигнете естествено изглеждащ, равномерен, наситен, бронзов тен. </p>
                         </div>
-                        <div id="selftan-container">
+                        <div id="selftan-container" class="product-container">
                             <div class="single-product">
                                 <div id="solis-drops" class="single-product-listing-header" style="opacity: 1;">
                                     <a class="single-product-listing-link" href="https://cocosolis.com/bg/product/solis-self-tanning-face-serum/">
@@ -1146,7 +1158,7 @@
                             <h2>ТЕН</h2>
                             <p>Натурални, био масла за супер тен и сияйна кожа </p>
                         </div>
-                        <div id="suntan-container">
+                        <div id="suntan-container" class="product-container">
                             <div class="single-product">
                                 <div id="watermelon" class="single-product-listing-header" style="opacity: 1;">
                                     <a class="single-product-listing-link" href="https://cocosolis.com/bg/product/watermelon-suntan-body-oil/">
@@ -1526,7 +1538,7 @@
                             <h2>БЛЯСЪК</h2>
                             <p>Натурални продукти за елегантен блясък и грижа за кожата</p>
                         </div>
-                        <div id="shimmer-container">
+                        <div id="shimmer-container" class="product-container">
                             <div class="single-product">
                                 <div id="aura" class="single-product-listing-header" style="opacity: 1;">
                                     <a class="single-product-listing-link" href="https://cocosolis.com/bg/product/aura-peptide-shimmer-spray/">
@@ -1648,7 +1660,7 @@
                             <p>Натурални, био слънцезащитни лосиони</p>
                         </div>
                         <div id="spf-container">
-                            <div class="single-product">
+                            <div class="single-product" class="product-container">
                                 <div id="spf-30" class="single-product-listing-header" style="opacity: 1;">
                                     <a class="single-product-listing-link" href="https://cocosolis.com/bg/product/natural-sunscreen-lotion-spf-30/">
                                         <div class="single-product-listing-image" style="background: url(image/spf30.jpg); background-size: cover;">
@@ -1739,7 +1751,7 @@
                         </div>
                     </div>
                 </section>
-                <a href="#all_products" style="display: inline;">
+                <a href="#products" style="display: inline;">
                     <div>
                         <svg id="back-to-top-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" style="position: absolute; z-index: 0;left: 50%; transform: translate(-50%, 0%) matrix(1, 0, 0, 1, 0, 0);">
                             <title>up-arrow</title>
@@ -1832,16 +1844,58 @@
                                 </h4>
                             </div>
                             <form id="signup-footer" class="form-form" action="#" method="POST" name="signup-footer">
-                                <div id="signup-footer-email-holder" class="form-email-holder"></div>
-                                <div id="signup-footer-consent-holder" class="form-consent-holder"></div>
+                                <div id="signup-footer-email-holder" class="form-email-holder">
+                                    <input id="signup-footer-email" class="form-email-input" type="text" name="signup-footer-email" value="" placeholder="твоят имейл адрес">
+                                    <span id="signup-footer-email-discription" class="form-email-input-discription" name="signup-footer-email-discription">
+                                        Моля, поставете отметка в квадратчето по-долу, за да можете да се присъедините.
+                                    </span>
+                                </div>
+                                <div id="signup-footer-consent-holder" class="form-consent-holder">
+                                    <label class="form-consent">
+                                        <span id="signup-footer-consent-text" class="form-consent-text">
+                                            Съгласен/на съм предоставеният от мен имейл да бъде използван, за да получавам известия за новости, подаръци и бъдещи промоции, свързани с продуктите COCOSOLIS, съгласно
+                                            <a href="https://cocosolis.com/bg/terms-of-use/">Общите условия за ползване на сайта</a>
+                                            и
+                                            <a href="https://cocosolis.com/bg/privacy-policy/">Политика за личните данни</a>
+                                            <span class="form-consent-obligatory">*</span>
+                                        </span>
+                                        <input id="signup-footer-consent" type="checkbox" name="signup-footer-consent">
+                                        <span class="form-consent-checkmark"></span>
+                                    </label>
+                                </div>
                                 <input id="signup-footer-submit" class="form-submit" type="submit" value="ВЛЕЗ В КЛУБА" disabled="">
                             </form>
                         </div>
                     </div>
-                    <div class="main-footer-links-social-media"></div>
+                    <div class="main-footer-links-social-media">
+                        <h4 class="main-footer-links-social-media-title">Последвайте ни</h4>
+                        <div class="main-footer-links-social-media-repeater">
+                            <div class="main-footer-links-social-media-repeater-icons">
+                                <a href="https://www.facebook.com/cocosolisbg/" target="_blank">
+                                    <img class="main-footer-links-social-media-image" src="https://cocosolis.com//wp-content/uploads/icon-social-media-facebook-footer-v0401.svg" alt="">
+                                </a>
+                                <a href="https://www.instagram.com/cocosolis.official/" target="_blank">
+                                    <img class="main-footer-links-social-media-image" src="https://cocosolis.com//wp-content/uploads/icon-social-media-instagram-footer-v0401.svg" alt="">
+                                </a>
+                                <a href="https://www.tiktok.com/@cocosolisofficial" target="_blank">
+                                    <img class="main-footer-links-social-media-image" src="https://cocosolis.com//wp-content/uploads/icon-social-media-tik-tok-footer-v0401.svg" alt="">
+                                </a>
+                            </div>
+                            <p>
+                                Тагни ни и има шанс да видиш
+                                <strong>своята снимка или видео</strong>
+                                в профила ни
+                                <strong>#cocosolis</strong>
+                            </p>
+                        </div>
+                        <div class="AS-ch-rel">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="main-footer-copyright"></div>
+            <div id="main-footer-copyright">
+                © 2016 - 2024 COCOSOLIS | All rights reserved
+            </div>
         </section>
     </footer>
     
